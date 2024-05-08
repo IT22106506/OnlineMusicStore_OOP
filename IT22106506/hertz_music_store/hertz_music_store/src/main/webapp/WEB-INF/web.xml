@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+	
+	<!--  -->	 
+	<servlet>
+		<servlet-name>redirectToCreate</servlet-name>
+		<servlet-class>playlist_pckg.playlistServlet</servlet-class>
+	</servlet>
+	<!-- path -->
+	<servlet-mapping>
+		<servlet-name>redirectToCreate</servlet-name>
+		<url-pattern>/redirectToCreate</url-pattern>
+	</servlet-mapping>
+	
+	<!--  -->
+	<servlet>
+		<servlet-name>myPlaylist</servlet-name>
+		<servlet-class>playlist_pckg.indexServlet</servlet-class>
+	</servlet>
+	<!-- path -->
+	<servlet-mapping>
+		<servlet-name>myPlaylist</servlet-name>
+		<url-pattern>/playlist</url-pattern>
+	</servlet-mapping>
+	
+	<!--  -->
+	<servlet>
+		<servlet-name>create</servlet-name>
+		<servlet-class>playlist_pckg.createServelet</servlet-class>
+	</servlet>
+	<!-- path -->
+	<servlet-mapping>
+		<servlet-name>create</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	<!--  -->
+	<servlet>
+		<servlet-name>updatePlaylist</servlet-name>
+		<servlet-class>playlist_pckg.updatePlaylistServlet</servlet-class>
+	</servlet>
+	<!-- path -->
+	<servlet-mapping>
+		<servlet-name>updatePlaylist</servlet-name>
+		<url-pattern>/updatePlist</url-pattern>
+	</servlet-mapping>
+	
+	<!--  -->
+	<servlet>
+		<servlet-name>deletePlaylist</servlet-name>
+		<servlet-class>playlist_pckg.deletePlaylistServlet</servlet-class>
+	</servlet>
+	<!-- path -->
+	<servlet-mapping>
+		<servlet-name>deletePlaylist</servlet-name>
+		<url-pattern>/deletePlist</url-pattern>
+	</servlet-mapping>
+	
+	<!--  -->
+	<servlet>
+		<servlet-name>addtoPlaylist</servlet-name>
+		<servlet-class>playlist_pckg.addToPlaylistServlet</servlet-class>
+	</servlet>
+	<!-- path -->
+	<servlet-mapping>
+		<servlet-name>addtoPlaylist</servlet-name>
+		<url-pattern>/add2Plist</url-pattern>
+	</servlet-mapping>
+	
+	<!--  -->
+	<servlet>
+		<servlet-name>addSong</servlet-name>
+		<servlet-class>playlist_pckg.AddServlet</servlet-class>
+	</servlet>
+	<!-- path -->
+	<servlet-mapping>
+		<servlet-name>addSong</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	
+	<!--  -->
+	<servlet>
+		<servlet-name>backPlaylist</servlet-name>
+		<servlet-class>playlist_pckg.backToPlaylistServlet</servlet-class>
+	</servlet>
+	<!-- path -->
+	<servlet-mapping>
+		<servlet-name>backPlaylist</servlet-name>
+		<url-pattern>/backtoplaylist</url-pattern>
+	</servlet-mapping>
+	
+		 
+</web-app>
+
+
